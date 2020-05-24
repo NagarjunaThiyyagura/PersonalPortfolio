@@ -17,7 +17,7 @@ body{
     background-size: cover;
 }
 section{
-    padding: 6rem;
+    padding: 6rem 0;
 }
 a{
     text-decoration: none;
@@ -392,9 +392,116 @@ input[type = "submit"]:hover{
     top: -2.5rem;
     right: 5rem;
     border-radius: 100%;
+    animation: pulse 2s infinite;
+    cursor:pointer;
 }
 .up i{
     color: #16162d;
     font-size: 2rem;
     margin: auto;
+}
+
+/*-----------Animations----------------------*/
+@keyframes pulse {
+    0%{
+        box-shadow: 0 0 0 0 rgba(79, 111, 203, 0.99);
+    }
+    70%{
+        box-shadow: 0 0 0 2rem rgba(81, 113, 205, 0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(79, 111, 203,0.99);
+    }
+}
+/*-----------Media Queries----------------------*/
+@media screen and (max-width: 768px){
+    body{
+        width: 100%;
+        height: 100%;
+        /*background: url("../images/background.JPG") no-repeat fixed;*/
+        background-color: #2a2828;
+        background-size: cover;
+    }
+    .landing-text h1{
+        font-size: 8rem;
+    }
+    .landing-text h6{
+        font-size: 1.5rem;
+    }
+    .nav-list{
+        flex-direction: column;
+    }
+    li{
+        margin: 2rem 0;
+    }
+    .nav-link{
+        font-size: 4.5rem;
+    }
+    .about-heading h1{
+        font-size: 7rem;
+    }
+    .section-heading h1{
+        font-size: 3rem;
+    }
+    .about-details .nav-list{
+        flex-direction: initial;
+    }
+    .about-details li{
+        margin: 0 2rem;
+    }
+    .timeline ul{
+        margin: 0 0 0 auto;
+    }
+    .timeline .date::before{
+        left: -20.3rem;
+    }
+    .timeline .date::after{
+        left: -6rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .menu-toggler{
+        top: 2rem;
+        right: 2rem;
+    }
+    .landing-text h1{
+        font-size: 8rem;
+    }
+    .landing-text h6{
+        font-size: 1.5rem;
+    }
+    .nav-link{
+        font-size: 3.5rem;
+    }
+    .about .container{
+        flex-direction: column;
+    }
+    .profile-image{
+        margin: 0 0 7rem 0;
+    }
+    .portfolio-item{
+        flex-direction: column;
+    }
+    .portfolio-img{
+        margin: 1rem 0 2rem 0;
+        order:1;
+    }
+    .portfolio-description{
+        margin: 0;
+        order: 2;
+    }
+    .timeline p{
+        font-size: 1.5rem;
+    }
+    .timeline .date::before{
+        font-size: 1rem;
+    }
+    form{
+        width: 100%;
+    }
+    .up{
+        right: 2rem;
+    }
 }

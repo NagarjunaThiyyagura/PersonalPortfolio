@@ -6,6 +6,8 @@
     <title>Nagarjuna Thiyyagura</title>
     <link href="styles/main.css" rel="stylesheet">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!--Source for Animations: https://github.com/michalsnik/aos-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
@@ -24,15 +26,19 @@
             </ul>
         </nav>
         <div class="landing-text">
-            <h1>Nagarjuna Reddy Thiyyagura</h1>
-            <h6>Python Developer | Full Stack Developer</h6>
+            <h1 data-aos="zoom-in-up" data-aos-delay="500" data-aos-easing = 'linear' data-aos-duration="1000">
+                Nagarjuna Reddy Thiyyagura
+            </h1>
+            <h6 data-aos="zoom-in-up" data-aos-delay="800" data-aos-easing = 'linear' data-aos-duration="1000">
+                Python Developer | Full Stack Developer
+            </h6>
         </div>
     </header>
     <section class="about" id="about">
         <div class="container">
 
-            <div class="profile-image"><img src="images/profile.JPG"></div>
-            <div class="about-details">
+            <div class="profile-image" data-aos="fade-right" data-aos-delay="300"><img src="images/profile.JPG"></div>
+            <div class="about-details" data-aos="fade-left" data-aos-delay="600">
                 <div class="about-heading">
                     <h1>About</h1>
                     <h6>Nagarjuna</h6>
@@ -64,11 +70,11 @@
     <section class="myskills" id="myskills">
         <div class="container">
             <div class="section-heading">
-                <h1>Skill Set</h1>
-                <h6>What I can work with</h6>
+                <h1 data-aos="zoom-in-up" data-aos-delay="200">Skill Set</h1>
+                <h6 data-aos="zoom-in-up" data-aos-delay="200">What I can work with</h6>
             </div>
             <div class="skills">
-                <div class="skill">
+                <div class="skill" data-aos="flip-up" data-aos-delay="400">
                     <div class="icon-container">
                         <i class="fab fa-python" style="font-size: 36px"></i>
                     </div>
@@ -77,7 +83,7 @@
                         Integer non turpis tortor. Vestibulum in accumsan sapien, sit amet fringilla lorem.
                         Proin quis ultrices est.</p>
                 </div>
-                <div class="skill">
+                <div class="skill" data-aos="flip-up" data-aos-delay="500">
                     <div class="icon-container">
                         <i class="fab fa-python" style="font-size: 36px"></i>
                     </div>
@@ -86,7 +92,7 @@
                         Integer non turpis tortor. Vestibulum in accumsan sapien, sit amet fringilla lorem.
                         Proin quis ultrices est.</p>
                 </div>
-                <div class="skill">
+                <div class="skill" data-aos="flip-up" data-aos-delay="600">
                     <div class="icon-container">
                         <i class="fab fa-python" style="font-size: 36px"></i>
                     </div>
@@ -95,7 +101,7 @@
                         Integer non turpis tortor. Vestibulum in accumsan sapien, sit amet fringilla lorem.
                         Proin quis ultrices est.</p>
                 </div>
-                <div class="skill">
+                <div class="skill" data-aos="flip-up" data-aos-delay="700">
                     <div class="icon-container">
                         <i class="fab fa-python" style="font-size: 36px"></i>
                     </div>
@@ -111,10 +117,10 @@
     <section class="projects" id="projects">
         <div class="container">
             <div class="section-heading">
-                <h1>Projects</h1>
-                <h6>Some of my Work</h6>
+                <h1 data-aos="fade-out" data-aos-delay="300">Projects</h1>
+                <h6 data-aos="fade-out" data-aos-delay="600">Some of my Work</h6>
             </div>
-            <div class="portfolio-item">
+            <div class="portfolio-item" data-aos="fade-in" data-aos-delay="800">
                 <div class="portfolio-img margin-right">
                     <img src="images/portfolio.png">
                 </div>
@@ -129,7 +135,7 @@
                     <a href="#" class="cta">Details</a>
                 </div>
             </div>
-            <div class="portfolio-item">
+            <div class="portfolio-item" data-aos="fade-in" data-aos-delay="800">
                 <div class="portfolio-description margin-right">
                     <h1>Portfolio 2</h1>
                     <p>Pellentesque varius mi nisl, at vehicula nisl iaculis vel.
@@ -144,7 +150,7 @@
                     <img src="images/portfolio.png">
                 </div>
             </div>
-            <div class="portfolio-item">
+            <div class="portfolio-item" data-aos="fade-in" data-aos-delay="800">
                 <div class="portfolio-img margin-right">
                     <img src="images/portfolio.png">
                 </div>
@@ -164,12 +170,12 @@
     <section class="experience" id="experience">
         <div class="container">
             <div class="section-heading">
-                    <h1>Work Experience</h1>
-                    <h6>Past and Current Work</h6>
+                    <h1 data-aos="zoom-in" data-aos-delay="300">Work Experience</h1>
+                    <h6 data-aos="zoom-in" data-aos-delay="600">Past and Current Work</h6>
                 </div>
             <div class="timeline">
                 <ul>
-                    <li class="date" data-date="May 2019 - Present">
+                    <li class="date" data-date="May 2019 - Present" data-aos="fade-right" data-aos-delay="300">
                         <h1>Northern Trust</h1>
                         <h2>Python Developer</h2>
                         <p>Pellentesque varius mi nisl, at vehicula nisl iaculis vel.
@@ -179,7 +185,7 @@
                             Sed facilisis sapien ac sodales imperdiet.
                             Morbi fermentum urna quis risus vestibulum bibendum.</p>
                     </li>
-                    <li class="date" data-date="Jul 2018 - Apr 2019">
+                    <li class="date" data-date="Jul 2018 - Apr 2019" data-aos="fade-right" data-aos-delay="400">
                         <h1>Esurance</h1>
                         <h2>Python Developer</h2>
                         <p>Pellentesque varius mi nisl, at vehicula nisl iaculis vel.
@@ -189,7 +195,7 @@
                             Sed facilisis sapien ac sodales imperdiet.
                             Morbi fermentum urna quis risus vestibulum bibendum.</p>
                     </li>
-                    <li class="date" data-date="Jan 2017 - Dec 2017">
+                    <li class="date" data-date="Jan 2017 - Dec 2017" data-aos="fade-right" data-aos-delay="500">
                         <h1>IndGlobal</h1>
                         <h2>Software Developer</h2>
                         <p>Pellentesque varius mi nisl, at vehicula nisl iaculis vel.
@@ -204,7 +210,7 @@
         </div>
     </section>
     <section class="contact" id="contact">
-        <div class="container">
+        <div class="container" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease-in-sine">
             <div class="section-heading">
                 <h1>Contact</h1>
                 <h6>Let's Connect</h6>
@@ -236,5 +242,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 </body>
 </html>
